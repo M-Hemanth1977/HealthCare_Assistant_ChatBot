@@ -17,11 +17,20 @@ A conversational AI-powered assistant designed to provide **accurate, user-frien
   - Session memory support via `st.session_state`.
 
 -  **LangChain Agent Integration**:
-  - Uses tools like `Wikipedia`, `Arxiv`, `DuckuDuckusearch` via LangChain for general lookup (via `agent_making.py`).
+  - Uses tools like `Wikipedia`, `Arxiv`, `DuckDuckGo` via LangChain for general lookup (via `agent_making.py`).
+
+- **LangSmith Tracking**:
+  - Tracks and visualizes conversation flows
+  - Uses:
+    ```python
+    os.environ["LANGSMITH_TRACING"] = "true"
+    os.environ["LANGSMITH_PROJECT"] = "Project_name"
+    os.envirom["LANGSMITH_API_KEY"] = "YOUR_LANGSMITH_API_KEY"
+    ```
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 ```bash
 
 # 1. Clone the repo
@@ -30,13 +39,16 @@ cd Healthcare_Assistant_Chatbot
 
 # 2. Setup environment
 python -m venv venv
-venv\Scripts\activate       # On Windows
+venv\Scripts\activate      # On Windows
 pip install -r requirements.txt
 
 # 3. Create a .env file and add:
 hf_api_key=your_huggingface_token
-google_ai_api_key=your_groq_or_gemini_key
-langchain_api_key=your_langsmith_token
+langsmith_api_key=your_langsmith_token
+grok_api_key=your_qrok_key
 
 # 4. Launch
-streamlit run app.py
+streamlit run main.py
+
+
+
