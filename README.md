@@ -49,6 +49,11 @@ grok_api_key=your_qrok_key
 
 # 4. Launch
 streamlit run main.py
+```
 
+### Chatbot UI
+---
 
+![Healthcare Assistant Chatbot UI](./chatbot_image.jpg)
 
+---
