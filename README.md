@@ -54,6 +54,6 @@ streamlit run main.py
 ### Chatbot UI
 ---
 
-![Healthcare Assistant Chatbot UI](./chatbot_image.jpg)
+![Healthcare Assistant Chatbot UI](./Outputs_and_Images/Screenshot 2025-06-23 210157.png)
 
 ---
